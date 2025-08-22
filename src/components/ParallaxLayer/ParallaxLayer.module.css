@@ -1,0 +1,6 @@
+.layer {
+    will-change: transform;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  

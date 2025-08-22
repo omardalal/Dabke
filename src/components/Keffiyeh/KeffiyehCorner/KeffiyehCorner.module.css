@@ -1,0 +1,32 @@
+.keffiyehCorner {
+    position: fixed;
+    top: -1.2vw;
+    left: -1.2vw;
+    width: clamp(220px, 32vw, 520px);
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  .img {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    will-change: transform, opacity;
+  }
+  
+  .back {
+    position: absolute;
+    inset: 0;
+    opacity: 0.35;
+    filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.4));
+  }
+  
+  @media (max-width: 640px) {
+    .keffiyehCorner {
+      width: clamp(160px, 48vw, 360px);
+      top: -2vw;
+      left: -2vw;
+    }
+  }
+  

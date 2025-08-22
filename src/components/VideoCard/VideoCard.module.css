@@ -1,0 +1,75 @@
+:root {
+    --card-bg: rgba(23, 23, 23, 0.8);
+    --card-border: #27272a;
+    --text: #ffffff;
+    --muted: #c9cbd1;
+    --muted-2: #9ca3af;
+    --shadow: 0 20px 50px rgba(0,0,0,.45);
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow);
+  }
+  
+  .media {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mediaLabel {
+    color: #a3a3a3;
+    font-size: 0.875rem;
+  }
+  
+  .body {
+    padding: 1.25rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0;
+  }
+  
+  .region {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #a1a1aa;
+    white-space: nowrap;
+  }
+  
+  .desc {
+    margin-top: .5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  
+  .fringe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.85rem;
+  }
+
+  .tatreez {
+    height: 30px;
+  }

@@ -1,0 +1,24 @@
+.borderOuter {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  overflow: hidden;
+}
+
+.border {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  will-change: transform;
+}
+
+.image {
+  display: block;
+  height: 80px;
+  width: auto;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
