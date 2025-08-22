@@ -1,9 +1,12 @@
 .borderOuter {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100vw;
   overflow: hidden;
+}
+
+.borderOuterAnimated {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .border {

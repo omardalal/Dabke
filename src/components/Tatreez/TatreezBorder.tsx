@@ -27,7 +27,12 @@ const TatreezBorder: React.FC<Props> = ({
   );
 
   return (
-    <div ref={ref} className={styles.borderOuter}>
+    <div
+      ref={ref}
+      className={`${styles.borderOuter} ${
+        moveOnScroll ? styles.borderOuterAnimated : ""
+      }`}
+    >
       <motion.div
         className={styles.border}
         style={moveOnScroll ? { x } : undefined}
