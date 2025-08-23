@@ -4,20 +4,18 @@ import styles from "./ParallaxLayer.module.css";
 
 type Props = {
   yRange?: [string | number, string | number];
-  className?: string;
   children: React.ReactNode;
 };
 
 const ParallaxLayer: React.FC<Props> = ({
   yRange = ["-10%", "10%"],
-  className = "",
   children,
 }) => {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], yRange);
 
   return (
-    <motion.div style={{ y }} className={`${styles.layer} ${className}`}>
+    <motion.div style={{ y }} className={styles.layer}>
       {children}
     </motion.div>
   );

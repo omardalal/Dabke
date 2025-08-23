@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import KeffiyehCornerImage from "../../../assets/KeffiyehCorner.png";
 import styles from "./KeffiyehCorner.module.css";
+import { mergeClasses } from "../../../utils/uiUtils";
 
 type Props = {
   moveOnScroll?: boolean;
@@ -92,7 +93,7 @@ export const KeffiyehCorner: React.FC<Props> = ({
       <motion.img
         src={KeffiyehCornerImage}
         alt=""
-        className={`${styles.img} ${styles.back}`}
+        className={mergeClasses(styles.img, styles.back)}
         style={{
           x: useTransform(x, (v) => v * 0.5),
           y: useTransform(y, (v) => v * 0.5),
